@@ -1,0 +1,67 @@
+$margins: 0.5rem, 1rem, 1.5rem, 2rem, 2.5rem, 3rem;
+
+@each $margin in $margins {
+
+	$i: index($margins, $margin);
+
+	.m-#{$i} {
+		margin: $margin;
+	}
+
+	.mx-#{$i} {
+		margin-left: $margin;
+		margin-right: $margin;
+	}
+
+	.my-#{$i} {
+		margin-top: $margin;
+		margin-bottom: $margin;
+	}
+
+	.ml-#{$i} {
+		margin-left: $margin;
+	}
+
+	.mr-#{$i} {
+		margin-right: $margin;
+	}
+
+	.mt-#{$i} {
+		margin-top: $margin;
+	}
+
+	.mb-#{$i} {
+		margin-bottom: $margin;
+	}
+
+	.p-#{$i} {
+		padding: $margin;
+	}
+
+	.px-#{$i} {
+		padding-left: $margin;
+		padding-right: $margin;
+	}
+
+	.py-#{$i} {
+		padding-top: $margin;
+		padding-bottom: $margin;
+	}
+
+	.pl-#{$i} {
+		padding-left: $margin;
+	}
+
+	.pr-#{$i} {
+		padding-right: $margin;
+	}
+
+	.pt-#{$i} {
+		padding-top: $margin;
+	}
+
+	.pb-#{$i} {
+		padding-bottom: $margin;
+	}
+
+}

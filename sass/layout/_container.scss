@@ -1,0 +1,17 @@
+@import "../utils/media";
+
+.container {
+
+	width: 100%;
+	margin: 0 auto;
+	padding: 2rem;
+
+	@include for-tablet-landscape-up {
+		width: 80%;
+	}
+
+	@include for-desktop-up {
+		width: 1140px;
+	}
+
+}

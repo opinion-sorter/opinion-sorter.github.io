@@ -53,4 +53,106 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-size: 20px;
+}
+
+body, button, input {
+  font-family: "Rubik", "Lato", "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.box-x {
+  display: flex;
+  flex-direction: row;
+}
+.box-x.box-reverse {
+  flex-direction: row-reverse;
+}
+.box-x.box-center-x, .box-x.box-center {
+  justify-content: center;
+}
+.box-x.box-center-y, .box-x.box-center {
+  align-items: center;
+}
+
+.box-y {
+  display: flex;
+  flex-direction: column;
+}
+.box-y.box-reverse {
+  flex-direction: column-reverse;
+}
+.box-y.box-center-x, .box-y.box-center {
+  align-items: center;
+}
+.box-y.box-center-y, .box-y.box-center {
+  justify-content: center;
+}
+
+.box-x,
+.box-y {
+  align-items: flex-start;
+}
+.box-x.box-equal > *,
+.box-y.box-equal > * {
+  flex: 1;
+}
+.box-x.box-stretch,
+.box-y.box-stretch {
+  align-items: stretch;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+@media (min-width: 900px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

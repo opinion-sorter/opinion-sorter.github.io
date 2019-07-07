@@ -1,0 +1,52 @@
+$font-family-default: 'Rubik', 'Lato', 'Roboto', sans-serif;
+
+$font-size-small: 0.75rem;
+$font-size-default: 1rem;
+$font-size-medium: 1.5rem;
+$font-size-large: 2rem;
+$font-size-very-large: 2.5rem;
+
+html {
+	font-size: 20px;
+}
+
+body, button, input {
+	font-family: $font-family-default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-bottom: 1.5rem;
+}
+
+h1 {
+	font-size: $font-size-very-large;
+}
+
+h2 {
+	font-size: $font-size-large;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-size: $font-size-medium
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
