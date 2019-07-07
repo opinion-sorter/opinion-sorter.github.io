@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "outDir": "./js",
+        "allowJs": true,
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+		"target": "es5"
+    },
+    "include": [
+        "./ts/**/*"
+    ]
+}
