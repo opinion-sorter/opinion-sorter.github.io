@@ -1,6 +1,16 @@
 var btnAdd = id("add-opinion");
 var btnRun = id("run");
+var divSetup = id("setup");
+var divSorter = id("sorter");
 var divOpinions = id("opinions");
+function showSorterPanel() {
+    divSetup.classList.add("sorting");
+    divSorter.classList.add("sorting");
+}
+function hideSorterPanel() {
+    divSetup.classList.remove("sorting");
+    divSorter.classList.remove("sorting");
+}
 btnAdd.addEventListener("click", function () {
     var divOpinion = make("\n\t\n\t\t<div class=\"opinion opinion-text\">\n\t\t\t<input type=\"text\">\n\t\t\t<button class=\"remove-opinion\">Remove</button> \n\t\t</div>\n\n\t")[0];
     divOpinion.querySelector(".remove-opinion").addEventListener("click", function () {
@@ -24,7 +34,7 @@ btnRun.addEventListener("click", function () {
         }
     }
     if (!hasErrors) {
-        console.log(divInputs);
         console.log(opinions);
+        showSorterPanel();
     }
 });

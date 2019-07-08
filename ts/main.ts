@@ -1,6 +1,18 @@
 let btnAdd = id("add-opinion");
 let btnRun = id("run");
+let divSetup = id("setup");
+let divSorter = id("sorter");
 let divOpinions = id("opinions");
+
+function showSorterPanel(): void {
+	divSetup.classList.add("sorting");
+	divSorter.classList.add("sorting");
+}
+
+function hideSorterPanel(): void {
+	divSetup.classList.remove("sorting");
+	divSorter.classList.remove("sorting");
+}
 
 btnAdd.addEventListener("click", function() {
 
@@ -44,8 +56,11 @@ btnRun.addEventListener("click", function() {
 	}
 
 	if (!hasErrors) {
-		console.log(divInputs);
+		
 		console.log(opinions);	
+
+		showSorterPanel();
+
 	}
 
 });

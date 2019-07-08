@@ -12,6 +12,10 @@
 		justify-content: center;
 	}
 
+	.box-item-center {
+		justify-self: center;
+	}
+
 	&.box-center-y,
 	&.box-center {
 		align-items: center;
@@ -33,6 +37,10 @@
 		align-items: center;
 	}
 	
+	.box-item-center {
+		align-self: center;
+	}
+
 	&.box-center-y,
 	&.box-center {
 		justify-content: center;
@@ -45,10 +53,13 @@
 
 	align-items: flex-start;
 
-	&.box-equal>* {
+	&.box-equal>*,
+	.box-item-fill {
 		flex: 1;
 	}
+
 	&.box-stretch {
 		align-items: stretch
 	}
+
 }

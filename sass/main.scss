@@ -1,4 +1,38 @@
 @import "base/reset";
 @import "base/typography";
+@import "utils/heights";
 @import "layout/boxes";
-@import "layout/container"
+@import "layout/container";
+
+body {
+	background: #5f543f;
+	padding: 1rem 0;
+}
+
+#sorter, #setup {
+	overflow-y: auto;
+	transition: 1s height, 1s opacity;
+}
+
+#setup {
+	height: 100%;
+	opacity: 1;
+	&.sorting {
+		height: 0%;
+		opacity: 0;
+	}
+}
+
+#sorter {
+	height: 0%;
+	opacity: 0;
+	&.sorting {
+		height: 100%;
+		opacity: 1;
+	}
+}
+
+.main-box {
+	overflow-y: hidden;
+	width: 100%;
+}

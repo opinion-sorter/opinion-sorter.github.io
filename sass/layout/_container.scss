@@ -6,6 +6,8 @@
 	margin: 0 auto;
 	padding: 2rem;
 
+	background: white;
+
 	@include for-tablet-landscape-up {
 		width: 80%;
 	}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  style="height: 100%" lang="en">
+<html class="height-fill" lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +7,28 @@
 	<link rel="stylesheet" href="css/main.css">
 	<title>Opinion Sorting Machine</title>
 </head>
-<body style="height: 100%">
+<body class="height-fill">
 	
-	<div class="container">
-		
-		<div class="text-center">
+	<div class="container height-fill box-y">
+	
+		<div class="text-center box-item-center">
 			<h1>Opinion Sorting Machine</h1>
 			<p>What's the thing you love the most? We don't know, and neither do you. But we can help.</p>
 		</div>
-		
-		<div id="opinions" class="box-y"></div>
 
-		<button id="add-opinion">Add Item</button>
-		<button id="run">Run Machine</button>
-
+		<div class="box-item-fill main-box">
+			<div id="setup">
+				<div id="opinions" class="box-y"></div>
+			
+				<button id="add-opinion">Add Item</button>
+				<button id="run">Run Machine</button>
+			</div>
+			<div id="sorter">
+				<h1>Sorting time!</h1>
+				<button onclick="hideSorterPanel()">Return</button>
+			</div>
+		</div>
+	
 	</div>
 
 	<script src="js/utils/html.js"></script>
